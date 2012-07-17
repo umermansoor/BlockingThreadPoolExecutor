@@ -125,7 +125,7 @@ public class BlockingThreadPoolExecutor extends ThreadPoolExecutor
      */
     protected void taskRejectedGaveUp(Runnable r, int retryCount)
     {
-        logger.debug("Gave Up: {}",retryCount );
+        //logger.debug("Gave Up: {}",retryCount );
     }
     
     /**
@@ -135,7 +135,7 @@ public class BlockingThreadPoolExecutor extends ThreadPoolExecutor
      */
     protected void taskRejectedRetrying(Runnable r, int retryCount)
     {
-        logger.debug("Retrying: {}",retryCount );
+        //logger.debug("Retrying: {}",retryCount );
     }
     
     /**
@@ -145,7 +145,7 @@ public class BlockingThreadPoolExecutor extends ThreadPoolExecutor
      */
     protected void taskAccepted(Runnable r, int retryCount)
     {
-        logger.debug("Accepted: {}",retryCount );
+        //logger.debug("Accepted: {}",retryCount );
     }
 
   

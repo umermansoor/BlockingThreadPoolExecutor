@@ -5,7 +5,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 
 /**
- *
+ * ThreadFactory implementation to give each Thread a name appended with a unique id. Also
+ * defined priority.
+ * 
  * @author umermansoor
  */
 public class PriorityThreadFactory implements ThreadFactory
@@ -42,6 +44,7 @@ public class PriorityThreadFactory implements ThreadFactory
         
     }
     
+    @Override
     public Thread newThread(Runnable r)
     {
         Thread t = new Thread(r, name + "-" + id.getAndIncrement());
